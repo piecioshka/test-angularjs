@@ -6,8 +6,38 @@
 </head>
 <body>
     <div ng-controller="ArrowFunctionController">
-        {{ title }}
+        <dl>
+            <dt>ng-bind</dt>
+            <dd>
+                <span ng-bind="title"></span>
+            </dd>
+
+            <dt>interpolation</dt>
+            <dd>
+                {{ title }}
+            </dd>
+        </dl>
     </div>
+
+    <div ng-controller="ObjectController">
+        <dl>
+            <dt>ng-bind</dt>
+            <dd>
+                <span ng-bind="dataStructure"></span>
+            </dd>
+
+            <dt>interpolation</dt>
+            <dd>
+                {{ dataStructure }}
+            </dd>
+
+            <dt>interpolation with filter</dt>
+            <dd>
+                {{ dataStructure | json}}
+            </dd>
+        </dl>
+    </div>
+
     <script src="../node_modules/angular/angular.js"></script>
     <script src="scripts/main.js"></script>
 </body>
