@@ -1,1 +1,1 @@
-# test-angular-misc
+# test-angularjs-misc
